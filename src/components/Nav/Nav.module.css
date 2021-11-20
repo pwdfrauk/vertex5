@@ -16,5 +16,6 @@
     }
     .Navtext {
         text-align:center;
+        display: none;
     }
 }

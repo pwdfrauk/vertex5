@@ -9,7 +9,7 @@ const Welcome =(props)=> {
             <Row>
                 <Col md={12} lg={7}>
                 <Title Class={classes.WelcomeTitle}  >Welcome to <br /> VERTEX 5!</Title>
-                <DescriptionText Weight='500' LineHeight='1.7'>We are on a mission to remodel the fitness industry armed with our real-time
+                <DescriptionText  LineHeight='1.5'>We are on a mission to remodel the fitness industry armed with our real-time
                     repetition tracking application which utilises our wearable sensors.
                     <br />
                     <br />
@@ -23,7 +23,7 @@ const Welcome =(props)=> {
                     ability to battle your friends, or compete in group classes, anywhere in the world.
                     </DescriptionText>
                     <br />
-                    <DescriptionText  Weight='500' LineHeight='1.7'>Find out more {props.icon}</DescriptionText>
+                    <DescriptionText  LineHeight='1.5'>Find out more {props.icon}</DescriptionText>
                 </Col>
                 <Col md={12} lg={5} className='align-self-center'>
                     <div>

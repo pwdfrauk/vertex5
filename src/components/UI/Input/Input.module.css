@@ -5,6 +5,11 @@
   margin-bottom:40px;
   padding:15px;
 }
+@media (max-width:1400px) {
+  .FormLabel {
+    font-size: 18px;
+}
+}
 @media (max-width:768px) {
     .FormLabel {
         font-size: 20px;

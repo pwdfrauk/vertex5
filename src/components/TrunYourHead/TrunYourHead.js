@@ -7,7 +7,7 @@ const TrunYourHead = (props)=> {
     return(
         <Container className={classes.TrunYourHead}>
            <Row>
-                <Title Size="40px"
+                <Title Size="30px"
                 Bold="700"
                 PaddingBottom="30px"> Did we turn your head? </Title>
            </Row>

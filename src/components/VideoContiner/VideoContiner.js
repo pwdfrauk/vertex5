@@ -8,8 +8,8 @@ const VideoCard = (props)=> {
         <Container className={classes.VideoContiner} style={{paddingTop:`${props.PaddingTop}`}}>
             <Row style={{justifyContent: `${props.JustifyContent}`}}> 
                 <Col lg={7}>
-                    <Title Size="40px" Bold="700" PaddingBottom='24px'>{props.Text}</Title>
-                    <DescriptionText LineHeight='1.7' Weight='500' PaddingBottom='50px' Color="#7E7E7E">{props.DesText}</DescriptionText>
+                    <Title Size="30px" Bold="600" PaddingBottom='20px'>{props.Text}</Title>
+                    <DescriptionText LineHeight='1.5'  PaddingBottom='20px' Color="#7E7E7E">{props.DesText}</DescriptionText>
                     <Video Url = {props.Url} />
                 </Col>
             </Row>
