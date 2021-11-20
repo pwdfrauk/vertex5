@@ -1,0 +1,18 @@
+.TrunYourHead {
+    padding:80px 110px;
+}
+@media (max-width:1366px) {
+    .TrunYourHead {
+        padding:60px;
+    }
+}
+@media (max-width:768px) {
+    .TrunYourHead {
+        padding:45px;
+    }
+}
+@media (max-width:576px) {
+    .TrunYourHead {
+        padding:15px;
+    }
+}

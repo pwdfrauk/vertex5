@@ -1,0 +1,46 @@
+.Footer {
+    background: #333333;
+}
+.FooterContainer {
+    padding:80px 110px;
+}
+.SubscribeSubmitBtn {
+    background: #EAE6D9;
+    font-size: 20px;
+    padding:15px 90px;
+    width:260px;
+    border:none;
+    outline:none;
+    border-radius: 4px;
+}
+.FooterLogoArea {
+    width: 337px;
+}
+.FooterLogo {
+    width: 100%;
+}
+@media (max-width:1366px) {
+    .FooterContainer {
+        padding:60px;
+    }
+}
+@media (max-width:768px) {
+    .FooterContainer {
+        padding:40px;
+    }
+}
+@media (max-width:576px) {
+    .FooterContainer {
+        padding:15px;
+    }
+    .SubscribeSubmitBtn {
+    font-size: 18px;
+    padding:13px 70px;
+    width: 100%;
+    }
+    .FooterLogoArea {
+        width: 150px;
+        margin:auto;
+        padding-bottom:20px;
+    }
+}

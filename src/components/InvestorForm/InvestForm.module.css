@@ -1,0 +1,40 @@
+.Textarealabel {
+    font-size: 24px;
+}
+.InvestFormSubmitBtn {
+    background: #EAE6D9;
+    font-size: 24px;
+    padding:18px 110px;
+    border:none;
+    outline: none;
+}
+.InvFormSubmitArea {
+    text-align:center;
+    margin:50px 0px;
+}
+@media (max-width:768px) {
+    .Textarealabel {
+        font-size: 20px;
+    }
+    .InvFormSubmitArea {
+        margin:30px 0px;
+    }
+    .InvestFormSubmitBtn {
+        background: #EAE6D9;
+        font-size: 20px;
+        padding:15px 90px;
+        border-radius: 4px;
+    } 
+  }
+@media (max-width:576px) {
+  .Textarealabel {
+      font-size: 18px;
+  } 
+  .InvFormSubmitArea {
+    margin:20px 0px;
+}
+  .InvestFormSubmitBtn {
+    font-size: 18px;
+    padding:13px 70px;
+} 
+}

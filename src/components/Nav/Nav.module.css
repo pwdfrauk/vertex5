@@ -1,0 +1,20 @@
+.Nav {
+    margin:24px 0px;
+}
+.Navtext {
+    text-align:right;
+}
+.Navtext p {
+    margin-bottom:0px;
+}
+@media (max-width:576px) {
+    .Nav {
+        margin:15px 0px;
+    }
+    .Logoimg {
+        width: 100%;
+    }
+    .Navtext {
+        text-align:center;
+    }
+}

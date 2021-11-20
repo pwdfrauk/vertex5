@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+* {
+  margin:0px;
+  padding:0px;
+}
+body {
+  color:#090909;
+}
+.svg-inline--fa  {
+  height:12px !important;
+}
+@media (min-width:1600px) {
+  .container {
+    max-width: 1460px;
+  }
+}
+@media (min-width:1900px) {
+  .container {
+    max-width: 1760px ;
+  }
+}

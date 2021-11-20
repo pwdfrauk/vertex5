@@ -1,0 +1,18 @@
+.VideoContiner {
+    padding:80px 100px;
+}
+@media (max-width:1366px) {
+    .VideoContiner {
+        padding:60px;
+    }
+}
+@media (max-width:768px) {
+    .VideoContiner {
+        padding:45px;
+    } 
+}
+@media (max-width:576px) {
+    .VideoContiner {
+        padding:15px;
+    } 
+}

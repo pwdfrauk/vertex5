@@ -1,0 +1,21 @@
+.FormLabel {
+    font-size: 24px;
+}
+.Input {
+  margin-bottom:40px;
+  padding:15px;
+}
+@media (max-width:768px) {
+    .FormLabel {
+        font-size: 20px;
+    } 
+  }
+@media (max-width:576px) {
+  .FormLabel {
+      font-size: 18px;
+  } 
+  .Input {
+    margin-bottom:20px !important;
+    padding:10px;
+  }
+}

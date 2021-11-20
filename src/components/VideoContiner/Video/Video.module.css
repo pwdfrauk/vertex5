@@ -1,0 +1,22 @@
+.VideoSize iframe {
+    width: 700px;
+    height:374px;
+}
+@media (max-width:1366px) {
+    .VideoSize iframe {
+        width: 100%;
+        height:315px;
+    }
+}
+@media (max-width:768px) {
+    .VideoSize iframe {
+        width: 560px;
+        height:315px;
+    }
+}
+@media (max-width:576px) {
+    .VideoSize iframe {
+        width: 100%;
+        height:auto;
+    }
+}

@@ -1,0 +1,41 @@
+.WelcomeContainer {
+    padding:110px;
+    background:#EFEFEF;
+}
+.WelcomeTitle {
+    font-size: 72px;
+    font-weight:700;
+    line-height:1.8;
+}
+.WelcomeImg {
+    width: 100%;
+}
+@media (max-width:1366px) {
+    .WelcomeContainer {
+        padding:60px;
+    }
+}
+@media (max-width:768px) {
+    .WelcomeContainer {
+        padding:45px;
+    }
+    .WelcomeTitle {
+        font-size: 50px;
+        line-height:1.6;
+    }
+    .WelcomeImg {
+        width: 100%;
+    }
+}
+@media (max-width:576px) {
+    .WelcomeContainer {
+        padding:15px;
+    }
+    .WelcomeTitle {
+        font-size: 30px;
+        line-height:1.6;
+    }
+    .WelcomeImg {
+        width: 100%;
+    }
+}
