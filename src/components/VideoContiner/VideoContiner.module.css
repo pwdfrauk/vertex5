@@ -1,14 +1,14 @@
 .VideoContiner {
-    padding:80px 100px;
+    padding:30px 60px;
 }
-@media (max-width:1366px) {
+@media (max-width:1199px) {
     .VideoContiner {
-        padding:60px;
+        padding:15px 40px;
     }
 }
 @media (max-width:768px) {
     .VideoContiner {
-        padding:45px;
+        padding:30px;
     } 
 }
 @media (max-width:576px) {

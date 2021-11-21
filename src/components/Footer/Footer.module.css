@@ -2,7 +2,7 @@
     background: #333333;
 }
 .FooterContainer {
-    padding:80px 110px;
+    padding:80px 60px;
 }
 .SubscribeSubmitBtn {
     background: #EAE6D9;
@@ -12,12 +12,13 @@
     border:none;
     outline:none;
     border-radius: 4px;
+    text-align: center;
 }
 .FooterLogoArea {
     width: 337px;
 }
 .FooterLogo {
-    width: 100%;
+    width: 150px;
 }
 @media (max-width:1366px) {
     .FooterContainer {

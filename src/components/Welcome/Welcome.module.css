@@ -1,28 +1,24 @@
 .WelcomeContainer {
-    padding:110px;
+    padding:80px 60px;
     background:#EFEFEF;
 }
 .WelcomeTitle {
-    font-size: 45px;
+    font-size: 35px;
     font-weight:700;
     line-height:1.5;
 }
 .WelcomeImg {
     width: 100%;
 }
-@media (max-width:1366px) {
+@media (max-width:1199px) {
     .WelcomeContainer {
-        padding:60px;
-    }
-    .WelcomeTitle {
-        font-size: 35px;
-        font-weight:700;
-        line-height:1.5;
+        padding:50px 40px;
+        background:#EFEFEF;
     }
 }
 @media (max-width:768px) {
     .WelcomeContainer {
-        padding:45px;
+        padding:30px;
     }
     .WelcomeTitle {
         font-size: 50px;

@@ -7,15 +7,15 @@ const TrunYourHead = (props)=> {
     return(
         <Container className={classes.TrunYourHead}>
            <Row>
-                <Title Size="30px"
+                <Title Size="25px"
                 Bold="700"
-                PaddingBottom="30px"> Did we turn your head? </Title>
+                PaddingBottom="10px"> Did we turn your head? </Title>
            </Row>
            <Row>
                 <Col md={8}>
                     <DescriptionText 
                     color='#393939'
-                    PaddingBottom="40px" >
+                    PaddingBottom="15px" >
                     We are opening our pre-seed funding round in February 2022, if you’re an investor 
                     and you would like to see our pitch deck, please leave your details below. <br /><br />
                     Alternatively, you can reach out to Josh directly at: josh.brooks@vertex5.com

@@ -1,8 +1,8 @@
 .FormLabel {
-    font-size: 24px;
+    font-size: 20px;
 }
 .Input {
-  margin-bottom:40px;
+  margin-bottom:25px;
   padding:15px;
 }
 @media (max-width:1400px) {
@@ -12,15 +12,15 @@
 }
 @media (max-width:768px) {
     .FormLabel {
-        font-size: 20px;
+        font-size: 16px;
     } 
   }
 @media (max-width:576px) {
   .FormLabel {
-      font-size: 18px;
+      font-size: 16px;
   } 
   .Input {
-    margin-bottom:20px !important;
+    margin-bottom:15px !important;
     padding:10px;
   }
 }

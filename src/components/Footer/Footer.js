@@ -16,7 +16,8 @@ const Footer =(props)=> {
                     <Col md={5}>
                         <DescriptionText 
                         Color="#ffffff"
-                        Weight="500">
+                        Weight="500"
+                        >
                             Subscribe here to receive all of our company updates:
                         </DescriptionText>
                         <form>

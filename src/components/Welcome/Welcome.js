@@ -7,7 +7,7 @@ const Welcome =(props)=> {
     return(
         <Container className={classes.WelcomeContainer}>
             <Row>
-                <Col md={12} lg={7}>
+                <Col md={12} lg={7} xl={7}>
                 <Title Class={classes.WelcomeTitle}  >Welcome to <br /> VERTEX 5!</Title>
                 <DescriptionText  LineHeight='1.5'>We are on a mission to remodel the fitness industry armed with our real-time
                     repetition tracking application which utilises our wearable sensors.
@@ -25,7 +25,7 @@ const Welcome =(props)=> {
                     <br />
                     <DescriptionText  LineHeight='1.5'>Find out more {props.icon}</DescriptionText>
                 </Col>
-                <Col md={12} lg={5} className='align-self-center'>
+                <Col md={12} lg={5} xl={5} className='align-self-center'>
                     <div>
                         <img className={classes.WelcomeImg} src={welcomeing} alt='vertex5 ' />                   
                     </div>

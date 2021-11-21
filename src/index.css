@@ -9,10 +9,16 @@ body {
 body {
   color:#090909;
 }
-.svg-inline--fa  {
-  height:12px !important;
+.containerPading {
+  padding:60px;
 }
-@media (min-width:1600px) {
+/* @media (max-width:1199px) {
+  .container {
+    max-width: 980px;
+    }
+} */
+
+/* @media (min-width:1600px) {
   .container {
     max-width: 1460px;
   }
@@ -21,4 +27,4 @@ body {
   .container {
     max-width: 1760px ;
   }
-}
+} */

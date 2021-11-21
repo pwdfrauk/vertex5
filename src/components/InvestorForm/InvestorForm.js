@@ -59,7 +59,7 @@ const InvestorForm =(props)=> {
                         </textarea>
                     </div>
                     <div className={classes.InvFormSubmitArea}>
-                    <input className={classes.InvestFormSubmitBtn} type='submit' vlaue="Submit" />
+                    <button className={classes.InvestFormSubmitBtn} type='submit'>Submit</button>
                     </div>
                     </form>
                 </Col>
