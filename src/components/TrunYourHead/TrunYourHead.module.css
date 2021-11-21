@@ -1,14 +1,14 @@
 .TrunYourHead {
-    padding:80px 110px;
+    padding:50px 60px;
 }
-@media (max-width:1366px) {
+@media (max-width:1199px) {
     .TrunYourHead {
-        padding:60px;
+        padding:40px;
     }
 }
 @media (max-width:768px) {
     .TrunYourHead {
-        padding:45px;
+        padding:30x;
     }
 }
 @media (max-width:576px) {
