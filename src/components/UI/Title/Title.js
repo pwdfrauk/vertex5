@@ -1,7 +1,7 @@
-import classes from './Title.module.css'
+
 const Title = (props)=> {
     return(
-        <h2 className= {[classes.Title, props.Class].join(' ')} 
+        <h2 className={props.Class}
         style={{
             color:`${props.Color}`, 
             width:`${props.Width}`,

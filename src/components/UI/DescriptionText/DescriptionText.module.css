@@ -1,23 +1,82 @@
 .DescriptionText {
     font-size: 18px;
 }
-@media (max-width:1399px) {
+
+
+
+@media (min-width: 2301px) {
     .DescriptionText {
-        font-size: 14px;
-    } 
-}
-@media (max-width:1199px)  {
+        font-size: 26px !important;
+    }
+  }
+  @media (min-width: 2201px) and (max-width: 2300px) {
+    .DescriptionText {
+        font-size: 25px !important;
+    }
+  }
+  @media (min-width: 2101px) and (max-width: 2200px) {
+    .DescriptionText {
+        font-size: 24px !important;
+    }
+  }
+  @media (min-width: 2001px) and (max-width: 2100px) {
+    .DescriptionText {
+        font-size: 23px !important;
+    }
+  }
+  @media (min-width: 1901px) and (max-width: 2000px) {
+    .DescriptionText {
+        font-size: 22px !important;
+    }
+  }
+  @media (min-width: 1801px) and (max-width: 1900px) {
+
+  }
+  @media (min-width: 1701px) and (max-width: 1800px) {
+
+  }
+  @media (min-width: 1701px) and (max-width: 1800px) {
+    .DescriptionText {
+        font-size: 19px !important;
+    }
+  }
+  @media (min-width: 1601px) and (max-width: 1700px) {
+    .DescriptionText {
+        font-size: 18px !important;
+    }
+  }
+  @media (min-width: 1501px) and (max-width: 1600px) {
+    .DescriptionText {
+        font-size: 17px !important;
+    }
+  }
+  @media (min-width: 1401px) and (max-width: 1500px) {
+    .DescriptionText {
+        font-size: 15px !important;
+    }
+  }
+  @media (min-width: 1301px) and (max-width: 1400px) {
+    .DescriptionText {
+        font-size: 15px !important;
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1300px) {
+    .DescriptionText {
+        font-size: 15px !important;
+    }
+  }
+  @media (min-width: 1101px) and (max-width: 1199px) {
     .DescriptionText {
         font-size: 14px !important;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1100px) {
+    .DescriptionText {
+        font-size: 13px !important;
+    }
+  }
+@media (max-width:991px) {
+    .DescriptionText {
+        font-size: 12px !important;
     } 
-}
-@media (max-width:768px) {
-    .DescriptionText {
-        font-size: 14px;
-    }  
-}
-@media (max-width:576px) {
-    .DescriptionText {
-        font-size: 12px;
-    }  
 }

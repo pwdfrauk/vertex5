@@ -2,12 +2,12 @@ import { Col, Container, Row } from "react-bootstrap";
 import Title from "../UI/Title/Title"
 import DescriptionText from "../UI/DescriptionText/DescriptionText";
 import classes from './Welcome.module.css'
-import welcomeing from '../../assets/img/herosectionimg.png'
+import Bicepgif from '../../assets/img/bicepgif30s.gif'
 const Welcome =(props)=> {
     return(
-        <Container className={classes.WelcomeContainer}>
+        <Container className={[classes.WelcomeContainer, 'containerpading'].join(' ')}>
             <Row>
-                <Col md={12} lg={7} xl={7}>
+                <Col md={7} lg={7} xl={7}>
                 <Title Class={classes.WelcomeTitle}  >Welcome to <br /> VERTEX 5!</Title>
                 <DescriptionText  LineHeight='1.5'>We are on a mission to remodel the fitness industry armed with our real-time
                     repetition tracking application which utilises our wearable sensors.
@@ -25,9 +25,9 @@ const Welcome =(props)=> {
                     <br />
                     <DescriptionText  LineHeight='1.5'>Find out more {props.icon}</DescriptionText>
                 </Col>
-                <Col md={12} lg={5} xl={5} className='align-self-center'>
+                <Col md={5} lg={5} xl={5} className={[classes.WelcomeImageArea, 'align-self-center'].join(' ')}>
                     <div>
-                        <img className={classes.WelcomeImg} src={welcomeing} alt='vertex5 ' />                   
+                        <img className={classes.WelcomeImg} src={Bicepgif} alt='vertex5 ' />                   
                     </div>
                 </Col>
             </Row>

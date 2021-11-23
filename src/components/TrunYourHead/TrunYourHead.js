@@ -2,19 +2,20 @@ import { Col, Container, Row } from "react-bootstrap";
 import InvestorForm from "../InvestorForm/InvestorForm";
 import DescriptionText from '../UI/DescriptionText/DescriptionText'
 import Title from "../UI/Title/Title";
-import classes from './TrunYourHead.module.css'
+import classes from '../VideoContiner/VideoContiner.module.css'
 const TrunYourHead = (props)=> {
     return(
-        <Container className={classes.TrunYourHead}>
+        <Container className={[classes.TrunYourHead, 'containerpading '].join(' ')}>
            <Row>
-                <Title Size="25px"
+                <Title 
                 Bold="700"
-                PaddingBottom="10px"> Did we turn your head? </Title>
+                PaddingBottom="10px"
+                Class={classes.VideoContentTitle }> Did we turn your head? </Title>
            </Row>
            <Row>
                 <Col md={8}>
                     <DescriptionText 
-                    color='#393939'
+                    Color='#7E7E7E'
                     PaddingBottom="15px" >
                     We are opening our pre-seed funding round in February 2022, if you’re an investor 
                     and you would like to see our pitch deck, please leave your details below. <br /><br />

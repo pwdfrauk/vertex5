@@ -1,18 +1,171 @@
 .VideoContiner {
-    padding:30px 60px;
+    padding-bottom:20px !important;
 }
-@media (max-width:1199px) {
-    .VideoContiner {
-        padding:15px 40px;
+@media (min-width: 2301px) {
+    .VideoContentTitle  {
+        font-size: 52px;
+    }
+    .VideoContentTitle iframe  {
+        width: 939px;
+        height: 480px;
+    }
+  }
+  @media (min-width: 2201px) and (max-width: 2300px) {
+    .VideoContentTitle  {
+        font-size: 50px;
+    }
+    .VideoContentTitle iframe  {
+        width: 810px;
+        height: 435px;
+    }
+  }
+  @media (min-width: 2101px) and (max-width: 2200px) {
+    .VideoContentTitle  {
+        font-size: 47px;
+    }
+    .VideoContentTitle iframe  {
+        width: 800px;
+        height: 430px;
+    }
+  }
+  @media (min-width: 2001px) and (max-width: 2100px) {
+    .VideoContentTitle  {
+        font-size: 45px;
+    }
+    .VideoContentTitle iframe  {
+        width: 765px;
+        height: 400px;
+    }
+  }
+@media (min-width: 1901px) and (max-width: 2000px) {
+    .VideoContentTitle  {
+        font-size: 43px;
+    }
+    .VideoContentTitle iframe  {
+        width: 765px;
+        height: 400px;
+    }
+  }
+@media (min-width: 1801px) and (max-width: 1900px) {
+    .VideoContentTitle  {
+        font-size: 40px;
+    }
+    .VideoContentTitle iframe  {
+        width: 690px;
+        height: 360px;
+    }
+  }
+@media (min-width: 1701px) and (max-width: 1800px) {
+    .VideoContentTitle  {
+        font-size: 38px;
+    }
+    .VideoContentTitle iframe  {
+        width: 660px;
+        height: 335px;
+    }
+  }
+@media (min-width: 1601px) and (max-width: 1700px) {
+    .VideoContentTitle  {
+        font-size: 36px;
+    }
+    .VideoContentTitle iframe  {
+        width: 649px;
+        height: 330px;;
     }
 }
-@media (max-width:768px) {
-    .VideoContiner {
-        padding:30px;
-    } 
+@media (min-width: 1501px) and (max-width: 1600px) {
+    .VideoContentTitle  {
+        font-size: 34px;
+    }
+    .VideoContentTitle iframe  {
+        width: 620px;
+        height: 310px;
+    }
+}
+@media (min-width: 1401px) and (max-width: 1500px) {
+    .VideoContentTitle  {
+        font-size: 30px;
+    }
+    .VideoContentTitle iframe  {
+        width: 585px;
+        height: 270px;
+    }
+}
+@media (min-width: 1301px) and (max-width: 1400px) {
+    .VideoContentTitle  {
+        font-size: 28px;
+    }
+    .VideoContentTitle iframe  {
+        width: 525px;
+        height: 250px;
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1300px) {
+    .VideoContentTitle  {
+        font-size: 26px;
+    }
+    .VideoContentTitle iframe  {
+        width: 470px;
+        height: 240px;
+    }   
+  }
+  
+  @media (min-width: 1101px) and (max-width: 1199px) {
+    .VideoContentTitle  {
+        font-size: 24px;
+    }
+    .VideoContentTitle iframe  {
+        width: 470px;
+        height: 240px;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1100px) {
+    .VideoContentTitle  {
+        font-size: 21px;
+    }
+    .VideoContentTitle iframe  {
+        width: 420px;
+        height: 230px;
+    }
+  }
+  @media (min-width: 901px) and (max-width: 991px){
+    .VideoContentTitle  {
+        font-size: 19px;
+    }
+    .VideoContentTitle iframe  {
+        width: 375px;
+        height: 210px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 900px){
+    .VideoContentTitle  {
+        font-size: 15px;
+    }
+    .VideoContentTitle iframe  {
+        width: 345px;
+        height: 175px;
+    }
+   }
+@media (max-width:767px) {
+    .VideoContentTitle  {
+        font-size: 20px;
+    }
+    .VideoContentTitle iframe  {
+        width: 345px;
+        height: 175px;
+    }
+    .VideoContentTitle  {
+        text-align:center;
+    }
 }
 @media (max-width:576px) {
-    .VideoContiner {
-        padding:15px;
-    } 
+    .VideoContentTitle  {
+        font-size: 20px !important;
+    }
+}
+@media (max-width:409px) {
+    .VideoContentTitle iframe  {
+        width: 100%;
+        height: 175px;
+    }
 }

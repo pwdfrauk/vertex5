@@ -1,6 +1,9 @@
 .WelcomeContainer {
-    padding:80px 60px;
-    background:#EFEFEF;
+    background:#EDEDED;
+}
+.WelcomeImageArea {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .WelcomeTitle {
     font-size: 35px;
@@ -10,6 +13,90 @@
 .WelcomeImg {
     width: 100%;
 }
+@media (min-width: 2301px) {
+    .WelcomeTitle {
+        font-size: 125px;
+        line-height:1.6;
+    }
+  }
+  @media (min-width: 2201px) and (max-width: 2300px) {
+    .WelcomeTitle {
+        font-size: 120px;
+        line-height:1.6;
+    }
+  }
+  @media (min-width: 2101px) and (max-width: 2200px) {
+    .WelcomeTitle {
+        font-size: 115px;
+        line-height:1.6;
+    }
+  }
+  @media (min-width: 2001px) and (max-width: 2100px) {
+    .WelcomeTitle {
+        font-size: 105px;
+        line-height:1.6;
+    }
+  }
+@media (min-width: 1901px) and (max-width: 2000px) {
+    .WelcomeTitle {
+        font-size: 95px;
+        line-height:1.6;
+    }
+  }
+@media (min-width: 1801px) and (max-width: 1900px) {
+    .WelcomeTitle {
+        font-size: 95px;
+        line-height:1.6;
+    }
+  }
+@media (min-width: 1701px) and (max-width: 1800px) {
+    .WelcomeTitle {
+        font-size: 95px;
+        line-height:1.6;
+    }
+  }
+@media (min-width: 1701px) and (max-width: 1800px) {
+    .WelcomeTitle {
+        font-size: 75px;
+        line-height:1.6;
+    }
+  }
+@media (min-width: 1601px) and (max-width: 1700px) {
+    .WelcomeTitle {
+        font-size: 75px;
+        line-height:1.6;
+    }
+}
+@media (min-width: 1501px) and (max-width: 1600px) {
+    .WelcomeTitle {
+        font-size: 70px;
+        line-height:1.6;
+    }
+}
+@media (min-width: 1401px) and (max-width: 1500px) {
+    .WelcomeTitle {
+        font-size: 65px;
+        line-height:1.6;
+    }
+}
+@media (min-width: 1301px) and (max-width: 1400px) {
+    .WelcomeTitle {
+        font-size: 60px;
+        line-height:1.6;
+    }
+  }
+@media (min-width: 1301px) and (max-width: 1400px) {
+    .WelcomeTitle {
+        font-size: 55px;
+        line-height:1.6;
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1300px) {
+    .WelcomeTitle {
+        font-size: 45px;
+        line-height:1.6;
+    }
+  }
 @media (max-width:1199px) {
     .WelcomeContainer {
         padding:50px 40px;
@@ -20,23 +107,39 @@
     .WelcomeContainer {
         padding:30px;
     }
+   
     .WelcomeTitle {
         font-size: 50px;
         line-height:1.6;
     }
+    
+}
+@media (max-width:767px) {
     .WelcomeImg {
-        width: 100%;
-    }
+        width: 400px;
+     }
+     .WelcomeImageArea {
+         text-align: center;
+     }
 }
 @media (max-width:576px) {
     .WelcomeContainer {
         padding:15px;
+    }
+    .WelcomeImageArea {
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .WelcomeTitle {
         font-size: 30px;
         line-height:1.6;
     }
     .WelcomeImg {
+        width: 300px;
+     }
+}
+@media (max-width:340px) {
+    .WelcomeImg {
         width: 100%;
-    }
+     }
 }

@@ -44,7 +44,7 @@ const InvestorFormHandler =(e)=> {
         DesText={`We’re very passionate about reshaping the fitness industry to create consumer models 
         that are affordable for all backgrounds, it has never been more popular to exercise
         and we’re creating longevity in health by introducing truly enjoyable workouts.`}
-        Url = {"https://www.youtube.com/embed/9qvUYtwASqY"} />
+        Url = {"https://www.youtube.com/embed/yqWX86uT5jM"} />
         <VideoContiner 
         JustifyContent = {'flex-end'}
         PaddingTop = '0px'
@@ -52,7 +52,7 @@ const InvestorFormHandler =(e)=> {
         DesText={`VERTEX 5 is lead by Dorset based entrepreneur Josh Brooks. Josh has previously
         lead marketing and growth teams from corporate businesses right through to
         startups going through their own successful fundraises. `}
-        Url = {"https://www.youtube.com/embed/Tuw8hxrFBH8"} />
+        Url = {"https://www.youtube.com/embed/yqWX86uT5jM"} />
          <TrunYourHead 
           InputChange={inputCangeHandler}
           SubmitInForm = {InvestorFormHandler}
