@@ -14,7 +14,6 @@ const Nav =(props)=>{
         <Col xs={7} md={6} className='align-self-center'>
             <div className={classes.Navtext}>
                 <DescriptionText className='mb-0'> Register for company updates here {props.icon} </DescriptionText>
-                
             </div>
         </Col>
     </Row>

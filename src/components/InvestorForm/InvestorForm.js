@@ -17,7 +17,7 @@ const InvestorForm =(props)=> {
                         Value={props.StateName}
                         Background = "#F6F6F6"
                         BorderColor="#EAE6D9"
-                        Required={`true`}
+                        Required={true}
                         />
                     </Col>
                     <Col lg={4}>
@@ -29,7 +29,7 @@ const InvestorForm =(props)=> {
                         Value={props.StateCompanyName }
                         Background = "#F6F6F6"
                         BorderColor="#EAE6D9"
-                        Required={`true`}
+                        Required={true}
                         /> 
                     </Col>
                     <Col lg={4}>
@@ -41,7 +41,7 @@ const InvestorForm =(props)=> {
                         Value={props.StateEamil }
                         Background = "#F6F6F6"
                         BorderColor="#EAE6D9"
-                        Required={`true`}
+                        Required={true}
                         />
                     </Col>
                 </Row>
@@ -50,16 +50,22 @@ const InvestorForm =(props)=> {
                         <textarea 
                         className="form-control" 
                         id="exampleFormControlTextarea1" 
-                        rows="3"
+                        rows="8"
                         type="textarea" 
                         value={props.StateComment}  
                         onChange={props.OnChange}
                         style={{background:'#F6F6F6',
                         borderColor:'#EAE6D9'}} >
                         </textarea>
-                    </div>
+                </div>
+                <Row>
+                    <Col className='Checkbox-S-area'>
+                     <input type="checkbox" onChange={props.OnChange} name="isSubscribe" value={props.StateIsSubscribe} />
+                     <span> Would you like to also subscribe for our company updates?</span>
+                    </Col>
+                </Row>
                     <div className={classes.InvFormSubmitArea}>
-                    <button className={classes.InvestFormSubmitBtn} type='submit'>Submit</button>
+                        <button className={classes.InvestFormSubmitBtn} type='submit'  disabled={props.StateLoadding}  >Submit</button>
                     </div>
                     </form>
                 </Col>

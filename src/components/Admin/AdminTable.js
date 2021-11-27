@@ -1,24 +1,3 @@
-import VertexHome from "./containers/VertexHome/VertexHome";
- import AdminDashboard from "./components/Admin/AdminDashboard/AdminDashboard";
- import SubscribeComponent from "./components/Admin/AdminDashboard/SubscriberComponent";
- import InvestorComponent from "./components/Admin/AdminDashboard/InvestrotComponent";
- import { Routes, Route } from "react-router-dom";
-function App() {
-  return (
-    <>
-      <Routes>
-          <Route path='/' element={ <VertexHome />} />
-          <Route path='/admin' element={<AdminDashboard />} />
-          <Route path="/investorlist" element={<InvestorComponent />} />
-          <Route path="/subscribelist" element={<SubscribeComponent />} />
-          <Route path='*' element={<h1>Page Not Found</h1>} />
-      </Routes>
-    </>
-  );
-}
-
-export default App;
-
 // import React from "react";
 // import { useState, useEffect } from "react";
 // import { collection, getDocs, addDoc, serverTimestamp } from "firebase/firestore";
@@ -33,7 +12,7 @@ export default App;
 //       // console.log(parkingData);
 //       setInvestForm(investFormData.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
 //     };
-    
+
 //     getData();
 //   }, []);
 //  const addingDataToFirebase = async ()=> {
@@ -43,8 +22,11 @@ export default App;
 //     comment: 'Hello this one is my comment',
 //     timestamp: serverTimestamp()
 //   });
-//   console.log("Document written with ID: ", docRef);
+
+// console.log("Document written with ID: ", docRef.id);
+
 //   }
+
 //  const showTime =(time)=> {
 //     let stringified = time;
 //     let split1 = stringified.split('T');

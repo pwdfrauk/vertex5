@@ -29,7 +29,10 @@ const TrunYourHead = (props)=> {
                     StateName={props.stateName}
                     StateEamil = {props.stateEmail}
                     StateCompanyName = {props.stateCompanyName}
-                    StateComment = {props.stateComment} />
+                    StateComment = {props.stateComment}
+                    StateIsSubscribe = {props.stateIsSubscribe}
+                    StateLoadding = {props.stateLoading}
+                    />
         </Container>
         
     )

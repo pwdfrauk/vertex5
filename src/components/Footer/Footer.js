@@ -20,13 +20,14 @@ const Footer =(props)=> {
                         >
                             Subscribe here to receive all of our company updates:
                         </DescriptionText>
-                        <form>
+                        <form onSubmit={props.subscribFormHandler}>
                             <Input 
                             Placeholder="Enter email address"
-                            type={props.subscribEmail}
-                            value = {props.value}
-                            onChange = {props.chage} />
-                            <input className={classes.SubscribeSubmitBtn}  type="submite" value='Submit' />
+                            Type={`email`}
+                            Value = {props.Value}
+                            OnChange = {props.Onchage} 
+                            Required={true} />
+                            <button className={classes.SubscribeSubmitBtn} disabled={props.stateLoading}  type="submite" >Submit  </button>
                         </form>
                     </Col>
                 </Row>

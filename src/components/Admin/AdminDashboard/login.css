@@ -1,0 +1,21 @@
+.login-form-area {
+    max-width: 440px;
+    margin:auto;
+    margin-top: 50px;
+    background: rgb(246, 246, 246);
+    padding: 20px;
+    border-radius:4px;
+}
+.login-button {
+    padding: 10px 25px;
+    border-radius: 4px;
+    background: #20c4cb;
+    border-color: #20c4cb;
+    border: 1px solid;
+    color:#ffffff;
+}
+@media (max-width:576px;) {
+    .login-form-area {
+        width: 90%;
+    }
+}

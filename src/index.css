@@ -9,6 +9,56 @@ body {
 body {
   color:#090909;
 }
+.heading-title-shadow {
+  text-shadow: 0 2px white, 0 3px #777 !important;
+  text-transform:uppercase;
+}
+.Checkbox-S-area {
+  margin-top: 30px;
+  text-align:center;
+}
+.Checkbox-S-area input[type="checkbox"] {
+  margin-right:5px;
+  width: 14px;
+  height:13px;
+ 
+}
+.Checkbox-S-area span {
+  font-size: 17px;
+}
+/* Dash board Nav button */
+.dashNav-area {
+  padding:10px 0px;
+}
+/* .dashNav-ara .dashlogo{} */
+.dashnavbtn-area {
+  display: flex;
+  justify-content: flex-end;
+}
+.dashnavbtn {
+  display: inline-block;
+  margin-left:20px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  background: rgb(246, 246, 246);
+  border-color: rgb(234, 230, 217);
+}
+@media (max-width:576px) {
+  .dashnavbtn {
+    margin:0px 5px;
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  .dashnavbtn-area {
+    justify-content: flex-start;
+  }
+  .dashlogo {
+    width: 120px;
+    margin-bottom:5px;
+  }
+}
+/* end DashNav desing  */
 @media (min-width: 2301px) {
   .container {
     max-width: 2260px !important;
