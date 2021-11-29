@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { collection, onSnapshot, query, orderBy } from "firebase/firestore";
-import { db } from "../../../Firebase/config";
+import app from "../../../Firebase/config";
+import { getFirestore } from "firebase/firestore";
 const SubscribeList =()=> {
     const [subscribeForm, setSubscribeForm] = useState([])
- 
+    const db = getFirestore(app);
     useEffect(() => {
       const collections = collection(db, "subscribelist");
       const q= query(collections, orderBy('timestamp', 'desc'))
@@ -25,7 +26,7 @@ const SubscribeList =()=> {
                 <h2 className="text-center heading-title-shadow">Subscribe List</h2>
             </Row>
             <Row className="mb-4">
-                <table class="table table-bordered investorTable">
+                <table className="table table-bordered investorTable">
                     <thead>
                         <tr>
                         <th scope="col">Date</th>

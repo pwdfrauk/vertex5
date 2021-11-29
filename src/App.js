@@ -3,16 +3,20 @@ import VertexHome from "./containers/VertexHome/VertexHome";
  import SubscribeComponent from "./components/Admin/AdminDashboard/SubscriberComponent";
  import InvestorComponent from "./components/Admin/AdminDashboard/InvestrotComponent";
  import { Routes, Route } from "react-router-dom";
+ import {AuthProvider, useAuth} from "./contexts/AuthContext"
 function App() {
+  const {currentUser} = useAuth;
   return (
     <>
+    <AuthProvider >
       <Routes>
           <Route path='/' element={ <VertexHome />} />
-          <Route path='/admin' element={<AdminDashboard />} />
-          <Route path="/investorlist" element={<InvestorComponent />} />
-          <Route path="/subscribelist" element={<SubscribeComponent />} />
+            <Route path='/admin' element={currentUser? <InvestorComponent/> : <AdminDashboard /> } />
+            <Route path="/investorlist" element={currentUser?  <AdminDashboard /> : <InvestorComponent/> } />
+            <Route path="/subscribelist" element={ currentUser?  <AdminDashboard /> : <SubscribeComponent />  } />
           <Route path='*' element={<h1>Page Not Found</h1>} />
       </Routes>
+    </AuthProvider>
     </>
   );
 }

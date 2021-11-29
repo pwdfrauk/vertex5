@@ -26,6 +26,26 @@ body {
 .Checkbox-S-area span {
   font-size: 17px;
 }
+/* Dash board user icon area  */
+.userIconArea {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.userIconArea i {
+  margin-right: 8px;
+  font-size: 25px;
+}
+.userIconArea i svg {
+ color: #687bf6;
+}
+.userIconArea .loginUserName {
+  margin-bottom:0px;
+  /* color:#20c4cb; */
+  color: #0323f3;
+  font-size: 18px;
+  text-transform: capitalize;
+}
 /* Dash board Nav button */
 .dashNav-area {
   padding:10px 0px;

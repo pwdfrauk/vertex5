@@ -6,7 +6,8 @@ import VideoContiner from '../../components/VideoContiner/VideoContiner'
 import TrunYourHead from '../../components/TrunYourHead/TrunYourHead'
 import Footer from '../../components/Footer/Footer'
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { db } from "../../Firebase/config";
+import app from  "../../Firebase/config";
+import { getFirestore } from "firebase/firestore";
 import {  useState } from 'react'
 
 const arrowDown = <FontAwesomeIcon icon={faArrowDown} /> 
@@ -20,6 +21,8 @@ const VertexHome = ()=> {
     const [loading, setLoading] = useState() 
     const [subsEmail, setSubsEmail] = useState('')
 
+    const db = getFirestore(app);
+    
     const subsInputChangeHandler =(e)=> {
       if(e.target.type === 'email') {
         setSubsEmail(e.target.value);
