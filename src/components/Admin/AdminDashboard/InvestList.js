@@ -4,9 +4,9 @@ import { collection, onSnapshot, query, orderBy } from "firebase/firestore";
 import app from "../../../Firebase/config";
 import { getFirestore } from "firebase/firestore";
 const InvestList =()=> {
-    const [investList, setInvestList] = useState([])
+    const [investList, setInvestList] = useState([]);
     const db = getFirestore(app);
-    useEffect(() => {
+useEffect(() => {
       const collections = collection(db, "inveslist");
       const q= query(collections, orderBy('timestamp', 'desc'))
       const unsub = onSnapshot(q, (snapshot)=>
@@ -20,8 +20,7 @@ const InvestList =()=> {
     let createdDate = split1[0].replace(/\-/g, '-');
      return createdDate;
   }
-
-    return (
+    return (<>
         <Container>
             <Row className="my-4">
                 <h2 className="text-center heading-title-shadow">Investor List</h2>
@@ -53,6 +52,7 @@ const InvestList =()=> {
                 </table>
             </Row>
         </Container>
+        </>
     )
 } 
 export default InvestList;

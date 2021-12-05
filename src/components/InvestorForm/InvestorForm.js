@@ -60,8 +60,8 @@ const InvestorForm =(props)=> {
                 </div>
                 <Row>
                     <Col className='Checkbox-S-area'>
-                     <input type="checkbox" onChange={props.OnChange} name="isSubscribe" value={props.StateIsSubscribe} />
-                     <span> Would you like to also subscribe for our company updates?</span>
+                     <input id="issubscribe" type="checkbox" onChange={props.OnChange} name="isSubscribe" value={props.StateIsSubscribe} />
+                     <span><label For='issubscribe'> Would you like to also subscribe for our company updates?</label></span>
                     </Col>
                 </Row>
                     <div className={classes.InvFormSubmitArea}>

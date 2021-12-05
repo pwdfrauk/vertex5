@@ -5,11 +5,11 @@ import classes from './Welcome.module.css'
 import Bicepgif from '../../assets/img/bicepgif30s.gif'
 const Welcome =(props)=> {
     return(
-        <Container className={[classes.WelcomeContainer, 'containerpading'].join(' ')}>
+        <Container className={`${classes.WelcomeContainer} containerpading`}>
             <Row>
                 <Col md={7} lg={7} xl={7}>
-                <Title Class={classes.WelcomeTitle}  >Welcome to <br /> VERTEX 5!</Title>
-                <DescriptionText  LineHeight='1.5'>We are on a mission to remodel the fitness industry armed with our real-time
+                <Title Class={classes.WelcomeTitle} Animate={props.animateClass} >Welcome to <br /> VERTEX 5!</Title>
+                <DescriptionText Animate={props.animateClass}  LineHeight='1.5'>We are on a mission to remodel the fitness industry armed with our real-time
                     repetition tracking application which utilises our wearable sensors.
                     <br />
                     <br />
@@ -23,9 +23,9 @@ const Welcome =(props)=> {
                     ability to battle your friends, or compete in group classes, anywhere in the world.
                     </DescriptionText>
                     <br />
-                    <DescriptionText  LineHeight='1.5'>Find out more {props.icon}</DescriptionText>
+                    <DescriptionText Animate={props.animateClass}  LineHeight='1.5'>Find out more {props.icon}</DescriptionText>
                 </Col>
-                <Col md={5} lg={5} xl={5} className={[classes.WelcomeImageArea, 'align-self-center'].join(' ')}>
+                <Col md={5} lg={5} xl={5} className={`{classes.WelcomeImageArea} wow animate__animated animate__slideInRight align-self-center`}>
                     <div>
                         <img className={classes.WelcomeImg} src={Bicepgif} alt='vertex5 ' />                   
                     </div>

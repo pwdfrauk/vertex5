@@ -5,24 +5,34 @@ import Welcome from '../../components/Welcome/Welcome'
 import VideoContiner from '../../components/VideoContiner/VideoContiner'
 import TrunYourHead from '../../components/TrunYourHead/TrunYourHead'
 import Footer from '../../components/Footer/Footer'
+import PopUpbox from '../../components/PopUpBox/PopUpBox'
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import app from  "../../Firebase/config";
 import { getFirestore } from "firebase/firestore";
-import {  useState } from 'react'
+import {  useEffect, useState } from 'react'
+import spinner from '../../assets/img/spinnertrasnfer.gif'
+import WOW from 'wowjs'
 
 const arrowDown = <FontAwesomeIcon icon={faArrowDown} /> 
 
 const VertexHome = ()=> {
+
     const [yourName, setYourName] = useState('')
     const [companyName, setCompanyName] = useState('')
     const [email, setEmail] = useState('')
     const [comment, setComment] = useState('')
-    const [isSubscribe, setIsSubscribe] = useState(true)
-    const [loading, setLoading] = useState() 
-    const [subsEmail, setSubsEmail] = useState('')
+    const [isSubscribe, setIsSubscribe] = useState(true);
+    const [loading, setLoading] = useState(false);
+    const [subsEmail, setSubsEmail] = useState('');
+    const [formPopUpBox, setFormPopUpBox] = useState(false);
+    const [subscribePopUpBox, setSubscribePopUpBox] = useState(false);
 
     const db = getFirestore(app);
-    
+
+    useEffect(()=>{
+      new WOW.WOW().init();
+    }, [] )
+
     const subsInputChangeHandler =(e)=> {
       if(e.target.type === 'email') {
         setSubsEmail(e.target.value);
@@ -62,14 +72,14 @@ const InvestorFormHandler = async (e)=> {
              investorSubscribeHandler(email);
             console.log(isSubscribe)
           }
-          console.log("Document written with ID: ", docRef.id);
+          setLoading(false);
+          setFormPopUpBox(true);
           setYourName('');
           setCompanyName('');
           setEmail('');
           setComment('');
           setIsSubscribe(false);
-          setLoading(false)
-
+          return docRef
         } catch(err) {
           alert('!Not Complate Please Submite again', err);
           setIsSubscribe(false);
@@ -86,13 +96,14 @@ const subscribeFormHandler =async (e)=> {
         email: subsEmail,
         timestamp: serverTimestamp()
       })
-      console.log("Document written with ID: ", docRef.id);
+      setLoading(false);
+      setSubscribePopUpBox(true);
       setSubsEmail('');
-      setLoading(false)
-
+      return docRef;
     } catch(err) {
       alert('!Not Complate Please Submite again', err);
       setLoading(false);
+      setSubscribePopUpBox(false);
     }
   }
 }
@@ -101,13 +112,39 @@ const investorSubscribeHandler = async (email)=> {
     email: email,
     timestamp: serverTimestamp()
   })
-  console.log('subscribe email id:', subDocRef.id)
+  return subDocRef;
+}
+
+
+const popUpBoxClose=()=> {
+  setFormPopUpBox(false)
+}
+const sPopUpBoxClose=()=> {
+  setSubscribePopUpBox(false)
 }
 return(
         <>
+        {loading? <div className="spinner"><img src={spinner} alt="spinner" /></div> : ''}
+        {formPopUpBox? 
+        <PopUpbox
+         popupTitle='Well done!'
+         popupinfo="Form Submited Successfully"
+         ClassName = 'alert-success'
+         OnClick={popUpBoxClose}
+         /> : '' }
+        {subscribePopUpBox? 
+        <PopUpbox
+          popupTitle='Well done!'
+         popupinfo="Subscribed Successfully"
+         ClassName = 'alert-success'
+         OnClick={sPopUpBoxClose}
+         /> : ''}  
         <Nav icon={arrowDown} />
-        <Welcome icon={arrowDown} />
+        <Welcome icon={arrowDown}
+        animateClass='wow animate__animated animate__slideInLeft'
+         />
         <VideoContiner 
+        animateClass='wow animate__animated animate__slideInLeft'
         JustifyContent = {'flex-start'}
         Text={'Find out more about how and why we’re remodelling the fitness industry'}
         DesText={`We’re very passionate about reshaping the fitness industry to create consumer models 
@@ -115,6 +152,7 @@ return(
         and we’re creating longevity in health by introducing truly enjoyable workouts.`}
         Url = {"https://www.youtube.com/embed/yqWX86uT5jM"} />
         <VideoContiner 
+         animateClass='wow animate__animated animate__slideInRight'
         JustifyContent = {'flex-end'}
         PaddingTop = '0px'
         Text={`Find out more about our Founder & CEO, Josh Brooks`}
@@ -122,21 +160,23 @@ return(
         lead marketing and growth teams from corporate businesses right through to
         startups going through their own successful fundraises. `}
         Url = {"https://www.youtube.com/embed/yqWX86uT5jM"} />
-         <TrunYourHead 
-          InputChange={inputCangeHandler}
-          SubmitInForm = {InvestorFormHandler}
-          stateName={yourName}
-          stateEmail = {email}
-          stateCompanyName = {companyName}
-          stateIsSubscribe = {isSubscribe}
-          stateComment = {comment} 
-          stateLoading = {loading} />
-          <Footer
-            Onchage={subsInputChangeHandler}
-            Value={subsEmail}
-            subscribFormHandler = {subscribeFormHandler}
-            stateLoading = {loading}
-           />
+        <TrunYourHead 
+        animateClass='wow animate__animated  animate__flash'
+        InputChange={inputCangeHandler}
+        SubmitInForm = {InvestorFormHandler}
+        stateName={yourName}
+        stateEmail = {email}
+        stateCompanyName = {companyName}
+        stateIsSubscribe = {isSubscribe}
+        stateComment = {comment} 
+        stateLoading = {loading}
+        />
+        <Footer
+        Onchage={subsInputChangeHandler}
+        Value={subsEmail}
+        subscribFormHandler = {subscribeFormHandler}
+        stateLoading = {loading}
+        />
         </>
 
     )

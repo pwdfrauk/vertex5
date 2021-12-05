@@ -5,12 +5,12 @@ import Title from "../UI/Title/Title";
 import classes from '../VideoContiner/VideoContiner.module.css'
 const TrunYourHead = (props)=> {
     return(
-        <Container className={[classes.TrunYourHead, 'containerpading '].join(' ')}>
+        <Container className={`${classes.TrunYourHead}  containerpading`}>
            <Row>
-                <Title 
+                <Title Animate={props.animateClass}
                 Bold="700"
                 PaddingBottom="10px"
-                Class={classes.VideoContentTitle }> Did we turn your head? </Title>
+                Class='turnyouhead-title'> Did we turn your head? </Title>
            </Row>
            <Row>
                 <Col md={8}>

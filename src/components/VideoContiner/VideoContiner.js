@@ -6,7 +6,7 @@ import classes from './VideoContiner.module.css'
 const VideoCard = (props)=> {
     return(
         <Container className={[classes.VideoContiner, 'containerpading', ].join(' ')} style={{paddingTop:`${props.PaddingTop}`}}>
-            <Row style={{justifyContent: `${props.JustifyContent}`}}> 
+            <Row style={{justifyContent: `${props.JustifyContent}`}} className={props.animateClass}> 
                 <Col md={6} lg={6} xl={6}>
                     <Title 
                     Bold="600" PaddingBottom='7px'

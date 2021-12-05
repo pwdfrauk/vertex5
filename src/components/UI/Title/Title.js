@@ -1,7 +1,7 @@
 
 const Title = (props)=> {
     return(
-        <h2 className={props.Class}
+        <h2 className={`${props.Class} ${props.Animate}`}
         style={{
             color:`${props.Color}`, 
             width:`${props.Width}`,

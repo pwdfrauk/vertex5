@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Container, Col, Row} from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../../contexts/AuthContext";
+import spinner from '../../../assets/img/spinnertrasnfer.gif'
 import './login.css'
 const Login =()=> {
     const [error, setError] = useState();
@@ -9,43 +10,44 @@ const Login =()=> {
     const navigate = useNavigate();
 
     // signup form code 
-    const [username, setUsername] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [confirmPassword, setConfirmPassword] = useState("");
+    // const [username, setUsername] = useState("");
+    // const [email, setEmail] = useState("");
+    // const [password, setPassword] = useState("");
+    // const [confirmPassword, setConfirmPassword] = useState("");
 
-    const { signup } = useAuth();
+    // const { signup } = useAuth();
   
-    async function signUpFormHandleSubmit(e) {
-      e.preventDefault();
-      // do validation
-      if (password !== confirmPassword) {
-        return setError("Passwords don't match!");
-      }
+    // async function signUpFormHandleSubmit(e) {
+    //   e.preventDefault();
+    //   if (password !== confirmPassword) {
+    //     return setError("Passwords don't match!");
+    //   }
   
-      try {
-        setError("");
-        setLoading(true);
-        await signup(email, password, username);
-        navigate("/investorlist");
-      } catch (err) {
-        console.log(err);
-        setLoading(false);
-        setError("Failed to create an account!");
-      }
-    }
+    //   try {
+    //     setError("");
+    //     setLoading(true);
+    //     await signup(email, password, username);
+    //     navigate("/investorlist");
+    //   } catch (err) {
+    //     console.log(err);
+    //     setLoading(false);
+    //     setError("Failed to create an account!");
+    //   }
+    // }
     // end signup Code 
     // start login Code 
     const [loginEmail, setLoginEmail] = useState("");
     const [loginPassword, setLoginPassword] = useState("");
     const { login } = useAuth();
+
   
     async function logInFormHandleSubmit(e) {
       e.preventDefault();
+      setLoading(true);
       try {
         setError("");
-        setLoading(true);
         await login(loginEmail, loginPassword);
+        setLoading(false);
         navigate("/investorlist");
       } catch (err) {
         console.log(err);
@@ -56,6 +58,7 @@ const Login =()=> {
     // end login Code 
     return (
         <>
+        {loading? <div className="spinner"><img src={spinner} alt="spinner" /></div> : ''}
         {/* login form  */}
         <Container>
         <Row>
@@ -94,7 +97,7 @@ const Login =()=> {
             </div>
         </Col>
         {/* start signup from  */}
-        <Col>
+        {/* <Col>
             <div className="login-form-area mb-5">
                 <h2 className="mb3">Signup Form</h2>
                 <form onSubmit={signUpFormHandleSubmit}>
@@ -152,7 +155,7 @@ const Login =()=> {
                         
                 </form>
             </div>
-            </Col>
+            </Col> */}
         </Row>
         </Container>
          {/* end start signup from  */}

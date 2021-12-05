@@ -7,8 +7,9 @@
 }
 .WelcomeTitle {
     font-size: 35px;
-    font-weight:700;
-    line-height:1.5;
+    font-weight:600;
+   line-height:1.2;
+    margin-bottom:15px;
 }
 .WelcomeImg {
     width: 100%;
@@ -16,85 +17,85 @@
 @media (min-width: 2301px) {
     .WelcomeTitle {
         font-size: 125px;
-        line-height:1.6;
+       line-height:1.2
     }
   }
   @media (min-width: 2201px) and (max-width: 2300px) {
     .WelcomeTitle {
         font-size: 120px;
-        line-height:1.6;
+       line-height:1.2
     }
   }
   @media (min-width: 2101px) and (max-width: 2200px) {
     .WelcomeTitle {
         font-size: 115px;
-        line-height:1.6;
+       line-height:1.2
     }
   }
   @media (min-width: 2001px) and (max-width: 2100px) {
     .WelcomeTitle {
         font-size: 105px;
-        line-height:1.6;
+       line-height:1.2
     }
   }
 @media (min-width: 1901px) and (max-width: 2000px) {
     .WelcomeTitle {
         font-size: 95px;
-        line-height:1.6;
+       line-height:1.2
     }
   }
 @media (min-width: 1801px) and (max-width: 1900px) {
     .WelcomeTitle {
         font-size: 95px;
-        line-height:1.6;
+       line-height:1.2
     }
   }
 @media (min-width: 1701px) and (max-width: 1800px) {
     .WelcomeTitle {
         font-size: 95px;
-        line-height:1.6;
+       line-height:1.2
     }
   }
 @media (min-width: 1701px) and (max-width: 1800px) {
     .WelcomeTitle {
         font-size: 75px;
-        line-height:1.6;
+       line-height:1.2
     }
   }
 @media (min-width: 1601px) and (max-width: 1700px) {
     .WelcomeTitle {
         font-size: 75px;
-        line-height:1.6;
+       line-height:1.2
     }
 }
 @media (min-width: 1501px) and (max-width: 1600px) {
     .WelcomeTitle {
         font-size: 70px;
-        line-height:1.6;
+       line-height:1.2
     }
 }
 @media (min-width: 1401px) and (max-width: 1500px) {
     .WelcomeTitle {
         font-size: 65px;
-        line-height:1.6;
+       line-height:1.2
     }
 }
 @media (min-width: 1301px) and (max-width: 1400px) {
     .WelcomeTitle {
         font-size: 60px;
-        line-height:1.6;
+       line-height:1.2
     }
   }
 @media (min-width: 1301px) and (max-width: 1400px) {
     .WelcomeTitle {
         font-size: 55px;
-        line-height:1.6;
+       line-height:1.2
     }
   }
   @media (min-width: 1200px) and (max-width: 1300px) {
     .WelcomeTitle {
         font-size: 45px;
-        line-height:1.6;
+       line-height:1.2
     }
   }
 @media (max-width:1199px) {
@@ -110,7 +111,7 @@
    
     .WelcomeTitle {
         font-size: 50px;
-        line-height:1.6;
+       line-height:1.2
     }
     
 }
@@ -132,7 +133,7 @@
     }
     .WelcomeTitle {
         font-size: 30px;
-        line-height:1.6;
+       line-height:1.2
     }
     .WelcomeImg {
         width: 300px;

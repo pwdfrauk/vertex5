@@ -1,7 +1,7 @@
 import classes from './DescriptionText.module.css'
 const DescriptionText = (props)=> {
     return (
-        <p className={classes.DescriptionText} 
+        <p className={`${classes.DescriptionText} ${props.Animate}`} 
         style={{
             color:`${props.Color}`, 
             fontSize: `${props.Size}`,

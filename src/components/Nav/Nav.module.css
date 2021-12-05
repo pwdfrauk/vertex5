@@ -1,5 +1,5 @@
 .Nav {
-    margin:5px 0px;
+    margin:15px 0px;
 }
 .Navtext {
     text-align:right;
@@ -11,9 +11,10 @@
     width:150px;
 }
 @media (max-width:576px) {
-    .Logoimg {
-        width: 100%;
+    .Nav {
+        margin:5px 0px;
     }
+
     .Navtext {
         text-align:center;
         display: none;
