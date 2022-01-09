@@ -8,10 +8,10 @@ const playCircleIcon = <FontAwesomeIcon icon={faPlayCircle} />
 const Video =(props)=> {
 
     const videoPlayRef = useRef(null);
-    const videoPlaceholderRef =useRef(null)
+    const videoPlaceholderRef =useRef(null);
 
     const vidoePlay=()=> {
-        videoPlayRef.current.play()
+        videoPlayRef.current.play();
         videoPlaceholderRef.current.style.zIndex = "-10";
         console.log('viedeo click for play ')
     }

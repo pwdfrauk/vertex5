@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Title from "../UI/Title/Title"
 import DescriptionText from "../UI/DescriptionText/DescriptionText";
 import classes from './Welcome.module.css'
-import Bicepgif from '../../assets/img/bicepgif30s.gif'
+import Bicepgif from '../../assets/img/heroimages.png'
 const Welcome =(props)=> {
     return(
         <Container className={`${classes.WelcomeContainer} containerpading`}>
